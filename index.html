@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vlascrow</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+  rel="stylesheet"
+/>
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container d-flex">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="logo-placeholder.png" alt="Vlascrow" width="30" />
+      </a>
+  
+      <!-- Toggler Button (visible on screens 992px and below) -->
+      <button
+        class="navbar-toggler d-lg-none"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Navbar Links and Buttons -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Centered Links -->
+        <ul class="navbar-nav mx-auto d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#">About us</a>
+          </li>
+  
+          <!-- Dropdown for Resources -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="resourcesDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Resources
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+              <li><a class="dropdown-item" href="#">Blog</a></li>
+              <li><a class="dropdown-item" href="#">Case Studies</a></li>
+              <li><a class="dropdown-item" href="#">Help Center</a></li>
+            </ul>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+        </ul>
+  
+        <!-- Buttons on the Right -->
+        <div class="d-flex buttons-container">
+          <a href="#" class="btn btn-outline-primary me-2">Login</a>
+          <a href="#" class="btn btn-primary">Get started</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  
+
+  <!-- Hero Section -->
+  <header class="hero-section bg-light py-5">
+    <div class="container d-flex flex-column flex-lg-row align-items-center">
+      <div class="text-center text-lg-start">
+        <h1 class="hero-title fw-bold">
+          The all-in-one <span class="text-orange">transparent</span> escrow
+          payment solution
+        </h1>
+        <p class="text-muted mt-3">
+          Pay and get paid faster, skip transaction fees, automate transaction
+          tasks, control cash flow.
+        </p>
+        <a href="#" class="btn btn-primary mt-3">Join as a seller</a>
+      </div>
+      <div class="hero-illustration mt-5 mt-lg-0 position-relative">
+        <div class="diagram rounded shadow-sm p-4">
+          <div class="step mb-3 d-flex align-items-center">
+            <div class="icon bg-primary text-white">👤</div>
+            <p class="ms-3 mb-0">Create an escrow account</p>
+          </div>
+          <div class="step mb-3 bg-warning text-dark p-3 rounded">
+            <p class="mb-0">Set payment terms</p>
+          </div>
+          <div class="step mb-3 d-flex align-items-center">
+            <div class="icon bg-primary text-white">📦</div>
+            <p class="ms-3 mb-0">Seller sends goods to buyer</p>
+          </div>
+          <div class="step d-flex align-items-center">
+            <div class="icon bg-primary text-white">✔️</div>
+            <p class="ms-3 mb-0">Buyer confirms receipt</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+
+</body>
+</html>
