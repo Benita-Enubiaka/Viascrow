@@ -1,4 +1,12 @@
-/* Colors */
+*{
+  font-family: Libre Franklin;
+}
+
+h1, h2, p {
+  word-break: break-word;
+} 
+
+
 /* Navbar */
 .navbar {
     padding: 1rem 0;
@@ -50,43 +58,7 @@
     display: none; /* Hidden by default */
   }
   
-  @media (max-width: 992px) {
-    .navbar-toggler {
-      display: block; /* Visible on smaller screens */
-    }
-  
-    .navbar-nav {
-      flex-direction: column; /* Stack links vertically */
-      width: 100%;
-    }
-  
-    /* Buttons inside the toggle menu */
-    .buttons-container {
-      flex-direction: column; /* Stack buttons vertically */
-      align-items: center;
-      gap: 1rem; /* Add spacing between buttons */
-      margin-top: 1rem; /* Optional spacing */
-    }
-  
-    .buttons-container a {
-      width: 100%; /* Full width for buttons in the toggle menu */
-      text-align: center;
-    }
-  }
-  
-  /* Larger screens */
-  @media (min-width: 993px) {
-    .navbar-toggler {
-      display: none; /* Hidden for larger screens */
-    }
-  
-    .buttons-container {
-      flex-direction: row; /* Buttons appear in a row */
-      gap: 0;
-      margin-top: 0;
-    }
-  }
-  
+
   
   /* Hero Section */
   .hero-section .hero-title{
@@ -153,17 +125,95 @@
   .shadow-sm {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   }
+
+
+  /* Features Section */
+  .features-section {
+    background-color:#FD76370D;
+    font-family: 'Libre Franklin', sans-serif;
+    color: #0B2641;
+  }
   
-  /* Responsive Design */
-  @media (min-width: 992px) {
-    .hero-section h1 {
-      font-size: 3rem;
-    }
+  .features-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
   
-    .hero-illustration {
-      margin-left: 2rem;
-    }
+  .features-section p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  
+  .features-section .icon {
+    font-size: 1.8rem; /* Large icon size */
+    color: #FD7637; /* Orange color */
+    height: 50px;
+    width: 60px;
+    background-color: rgba(253, 118, 55, .5);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .features-section .card {
+    border-radius: 0.5rem; /* Rounded corners */
+    transition: transform 0.2s ease-in-out;
+  }
+  .features-section .card-body{
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+  
+  .features-section .card:hover {
+    transform: translateY(-5px); /* Hover effect */
+  }
+  
+  .features-section .card h5 {
+    font-family: Libre Franklin;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.24px;
+  }
+  
+  .features-section .card p {
+    font-size: 14px;
+    color: #0B2641CC;
+  }
+  
+
+  /* Get Started */
+  .steps {
+    background-color: #F0F4FA;
+  }
+  .step-indicator {
+    width: 20px;
+    height: 10px;
+  }
+  .step-content h6 {
+    margin-bottom: 0.5rem;
+    color: #137EE8;
+    font-family: Libre Franklin;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.97px;
+
   }
 
-
-  
+  .step-content h4{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.82px;
+    color: #0B2641;
+  }
+.step-content p {
+  margin: 0;
+  color: #0B2641CC;
+  font-family: Libre Franklin;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.97px;
+}

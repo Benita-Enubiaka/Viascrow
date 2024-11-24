@@ -1,0 +1,69 @@
+@media (max-width: 992px) {
+    .navbar-toggler {
+      display: block; /* Visible on smaller screens */
+    }
+  
+    .navbar-nav {
+      flex-direction: column; /* Stack links vertically */
+      width: 100%;
+    }
+  
+    /* Buttons inside the toggle menu */
+    .buttons-container {
+      flex-direction: column; /* Stack buttons vertically */
+      align-items: center;
+      gap: 1rem; /* Add spacing between buttons */
+      margin-top: 1rem; /* Optional spacing */
+    }
+  
+    .buttons-container a {
+      width: 100%; /* Full width for buttons in the toggle menu */
+      text-align: center;
+    }
+    .hero-section .hero-title{
+        font-size: 48px;
+        font-weight: 700;
+    }
+    .hero-illustration {
+        margin-left: 2rem;
+      }
+}
+  
+  /* Larger screens */
+@media (min-width: 993px) {
+    .navbar-toggler {
+      display: none; /* Hidden for larger screens */
+    }
+  
+    .buttons-container {
+      flex-direction: row; /* Buttons appear in a row */
+      gap: 0;
+      margin-top: 0;
+    }
+}
+    
+@media (max-width: 768px) {
+    .hero-section .hero-title{
+        font-size: 32px;
+    }
+    .hero-section p{
+        font-size: 16px;
+    }
+    .features-section .card h5 {
+        font-size: 16px;
+    }
+      
+    .features-section .card p {
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 1.75rem;
+    }
+    h2 {
+    font-size: 1.5rem;
+      }
+    p {
+        font-size: 1rem;
+    }
+}
+
