@@ -10,6 +10,7 @@
 }
     
 @media (max-width: 768px) {
+  /* Hero Section */
     .hero-section .hero-title{
         font-size: 32px;
     }
@@ -32,5 +33,25 @@
     p {
         font-size: 1rem;
     }
+
+    /* Payment-Section */
+    /* Payment Section */
+.payment-section h3{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40.9px;
+}
+
+.payment-section p, .payment .subtext{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.39px;
+}
+
+.payment-section .list-group-item{
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19.39px;
+}
 }
 
