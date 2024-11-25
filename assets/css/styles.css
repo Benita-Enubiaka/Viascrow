@@ -207,7 +207,7 @@ p{
   line-height: 50.9px;
 }
 
-.payment-section p, .payment .subtext, .utilities p{
+.payment-section p, .payment .subtext, .utilities p, .mobile-app-section p{
   font-size: 16px;
   font-weight: 400;
   line-height: 19.39px;
@@ -254,7 +254,80 @@ p{
   border-radius: 4px;
 }
 /* Partners Section */
+.partners-section{
+  background-color: #F0F4FA;
+}
 .partners-section img{
   width: 100px;
   height: 100px
+}
+
+.partners-section .partners-title{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #0B2641B2;
+}
+
+
+/* Mobile APP Section */
+.mobile-app-section {
+  background-color: #002147; 
+  color: #fff;
+  border-radius: 12px;
+  padding: 0;
+}
+
+.mobile-app-section .icon {
+  width: 20px;
+}
+
+.mobile-app-section h3{
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 52.8px;
+}
+
+.mobile-app-section button{
+  font-size: 8px;
+  font-weight: 600;
+}
+
+.mobile-app-section button span{
+  font-size: 16px;
+}
+
+.mobile-app-section .mobile-phone{
+  width: 400px;
+  margin-right: -700px;
+}
+
+/* Account Section */
+.account-section {
+  background-color: #A1C5D3;
+}
+
+
+.account-section h3{
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 58.5px;
+
+}
+
+.account-section p{
+  color: #0B2641;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.39px;
+}
+
+.account-btn {
+  padding: 10px 40px;
+  border-radius: 4px;
+  background-color: #0B2641;
+  color: #fff;
+  font-size: 14px;
+  border: none;
 }
