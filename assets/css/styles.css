@@ -1,219 +1,193 @@
-*{
-  font-family: Libre Franklin;
+/* General Styles */
+* {
+  font-family: 'Libre Franklin', sans-serif;
 }
 
 h1, h2, p {
   word-break: break-word;
-} 
-
+}
 
 /* Navbar */
 .navbar {
-    padding: 1rem 0;
-  }
-  
-  .navbar-brand img {
-    margin-right: 0.5rem;
-  }
-  
-  .navbar-nav .nav-link {
-    font-size: 1rem;
-    color: #000;
-    text-align: center;
-    margin: 0 1rem;
-  }
-  
-  .navbar-nav .nav-link:hover {
-    color: #007bff;
-  }
-  
-  .btn-primary {
-    background-color: #007bff;
-    border: none;
-  }
-  
-  .btn-outline-primary {
-    border-color: #007bff;
-    color: #007bff;
-  }
-  
-  .btn-outline-primary:hover {
-    background-color: #007bff;
-    color: white;
-  }
-  
-  /* Dropdown menu styles */
-  .dropdown-menu {
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 0.25rem;
-  }
-  
-  .dropdown-item:hover {
-    background-color: #f8f9fa;
-    color: #007bff;
-  }
-  
-  /* Toggler starts at 992px */
-  .navbar-toggler {
-    display: none; /* Hidden by default */
-  }
-  
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-  
-  /* Hero Section */
-  .hero-section .hero-title{
-    font-size: 72px;
-    font-weight: 700;
-  }
+.navbar .nav-link {
+  color: #0B2641;
+}
 
-  .hero-section p{
-    font-family: Libre Franklin;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 27px;
+.navbar .btn-outline-primary {
+  color: #137EE8;
+  border-color: #137EE8;
+}
 
-  }
-  
-  .hero-section .text-orange {
-    color: #f7931e;
-  }
+.navbar .get-started {
+  background-color: #137EE8;
+  color: #fff;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+}
 
-  .hero-section a{
-    font-family: Libre Franklin;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 16.97px;
-    padding: 8px 18px;
-  }
-  
-  .hero-illustration .diagram {
-    background-color: #0B2641 !important;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-    width: 400px;
-  }
-  
-  .hero-illustration .step {
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    border: 1px solid #ddd;
-    width: 100%;
-  }
-  
-  .hero-illustration .step .icon {
-    width: 40px;
-    height: 40px;
-    background: #007bff;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    margin-right: 1rem;
-  }
-  
-  .bg-warning {
-    background-color: #ffeaa7 !important;
-    color: #000;
-  }
-  
-  .shadow-sm {
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  }
+/* Hero Section */
+.hero-section .hero-title {
+  font-size: 72px;
+  font-weight: 700;
+}
 
+.hero-section p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
 
-  /* Features Section */
-  .features-section {
-    background-color:#FD76370D;
-    font-family: 'Libre Franklin', sans-serif;
-    color: #0B2641;
-  }
-  
-  .features-section h2 {
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 1.2;
-  }
-  
-  .features-section p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-  }
-  
-  .features-section .icon {
-    font-size: 1.8rem; /* Large icon size */
-    color: #FD7637; /* Orange color */
-    height: 50px;
-    width: 60px;
-    background-color: rgba(253, 118, 55, .5);
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .features-section .card {
-    border-radius: 0.5rem; /* Rounded corners */
-    transition: transform 0.2s ease-in-out;
-  }
-  .features-section .card-body{
-    display: flex;
-    justify-content: flex-start;
-    gap: 8px;
-  }
-  
-  .features-section .card:hover {
-    transform: translateY(-5px); /* Hover effect */
-  }
-  
-  .features-section .card h5 {
-    font-family: Libre Franklin;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 24.24px;
-  }
-  
-  .features-section .card p {
-    font-size: 14px;
-    color: #0B2641CC;
-  }
-  
+.hero-section .text-orange {
+  color: #f7931e;
+}
 
-  /* Get Started */
-  .steps {
-    background-color: #F0F4FA;
-  }
-  .step-indicator {
-    width: 20px;
-    height: 10px;
-  }
-  .step-content h6 {
-    margin-bottom: 0.5rem;
-    color: #137EE8;
-    font-family: Libre Franklin;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 16.97px;
+.hero-section a {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 18px;
+}
 
-  }
+.hero-illustration .diagram {
+  background-color: #0B2641;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 400px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
 
-  .step-content h4{
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 21.82px;
-    color: #0B2641;
-  }
-.step-content p {
-  margin: 0;
+.hero-illustration .step {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ddd;
+  width: 100%;
+}
+
+.hero-illustration .icon {
+  width: 40px;
+  height: 40px;
+  background: #007bff;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+/* Features Section */
+.features-section {
+  background-color: #FD76370D;
+  color: #0B2641;
+}
+
+.features-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.features-section p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.features-section .icon {
+  font-size: 1.8rem;
+  color: #FD7637;
+  height: 50px;
+  width: 60px;
+  background-color: rgba(253, 118, 55, 0.5);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features-section .card {
+  border-radius: 0.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.features-section .card-body {
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.features-section .card:hover {
+  transform: translateY(-5px);
+}
+
+.features-section .card h5 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.24px;
+}
+
+.features-section .card p {
+  font-size: 14px;
   color: #0B2641CC;
-  font-family: Libre Franklin;
+}
+
+/* Get Started Button */
+.get-started {
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #137EE8;
+  color: #fff;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/* Steps Section */
+.steps {
+  background-color: #F0F4FA;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.step-indicator {
+  width: 20px;
+  height: 10px;
+  background-color: #137EE8;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.step-content h6 {
+  color: #137EE8;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.step-content h4 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.step-content p {
   font-size: 14px;
   font-weight: 400;
-  line-height: 16.97px;
+  line-height: 1.5;
 }
