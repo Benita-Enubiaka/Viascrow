@@ -201,13 +201,13 @@ p{
 
 
 /* Payment Section */
-.payment-section h3{
+.payment-section h3 .utilities h3{
   font-size: 36px;
   font-weight: 700;
   line-height: 50.9px;
 }
 
-.payment-section p, .payment .subtext{
+.payment-section p, .payment .subtext, .utilities p{
   font-size: 16px;
   font-weight: 400;
   line-height: 19.39px;
@@ -218,4 +218,43 @@ p{
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
+  cursor: pointer;
+}
+
+/* Utilities Section */
+.utilities{
+  background-color: #FD76370D;;
+}
+.utilities h4{
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.78px;
+}
+
+.utilities .pay-bills{
+  background-color: #FD7637;
+  color: #fff;
+  padding: 10px 22px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+}
+
+.utilities h5{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.24px;
+}
+.utilities .icon-box{
+  background: #FD76371A;
+  width: 60px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+}
+/* Partners Section */
+.partners-section img{
+  width: 100px;
+  height: 100px
 }
