@@ -16,7 +16,7 @@ p{
 
 /* Navbar */
 .navbar {
-  background-color: #fff;
+  background-color: #ffffff;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -31,7 +31,7 @@ p{
 
 .navbar .get-started {
   background-color: #137EE8;
-  color: #fff;
+  color: #ffffff;
   padding: 10px 22px;
   border: none;
   border-radius: 4px;
@@ -156,7 +156,7 @@ p{
   font-size: 14px;
   font-weight: 600;
   background-color: #137EE8;
-  color: #fff;
+  color: #ffffff;
   padding: 10px 22px;
   border: none;
   border-radius: 4px;
@@ -174,7 +174,7 @@ p{
   width: 20px;
   height: 10px;
   background-color: #137EE8;
-  color: #fff;
+  color: #ffffff;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -233,7 +233,7 @@ p{
 
 .utilities .pay-bills{
   background-color: #FD7637;
-  color: #fff;
+  color: #ffffff;
   padding: 10px 22px;
   font-size: 14px;
   border: none;
@@ -274,7 +274,7 @@ p{
 /* Mobile APP Section */
 .mobile-app-section {
   background-color: #002147; 
-  color: #fff;
+  color: #ffffff;
   border-radius: 12px;
   padding: 0;
 }
@@ -294,13 +294,13 @@ p{
   font-weight: 600;
 }
 
-.mobile-app-section button span{
+.mobile-app-section button span,
+.footer-btn span{
   font-size: 16px;
 }
 
 .mobile-app-section .mobile-phone{
   width: 400px;
-  margin-right: -700px;
 }
 
 /* Account Section */
@@ -327,7 +327,110 @@ p{
   padding: 10px 40px;
   border-radius: 4px;
   background-color: #0B2641;
-  color: #fff;
+  color: #ffffff;
   font-size: 14px;
   border: none;
+}
+
+/* Footer Section */
+footer {
+  background-color: #0B2641;
+}
+footer p{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #FFFFFFCC;
+}
+
+footer h4{
+  font-family: Recursive;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.88px;
+}
+
+footer h5{
+  color: #A1C5D3B2;
+  font-family: Libre Franklin;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.97px;
+}
+
+footer .footer-btn{
+  font-size: 8px;
+  font-weight: 600;
+  width: 200px;
+  height: 60px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .btn-outline-light img {
+  max-width: 100%;
+  height: auto;
+}
+
+.mailing h5{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24.24px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.mailing p{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.54px;
+  color: #FFFFFF99;
+}
+
+.custom-input-group{
+  border: 1px solid #007bff;
+  padding: 4px;
+  border-radius: 4px;
+}
+.custom-input-group input {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+}
+
+.custom-input-group input::placeholder{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.54px;
+  color: #A1C5D380;
+}
+
+.custom-input-group input:focus {
+  box-shadow: none;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+}
+
+.input-group-text {
+  background-color: transparent !important;
+  border: none !important;
+  color: #A1C5D380 !important;
+  font-size: 18px !important;
+  margin-right: -20px;
+}
+
+.custom-input-group .btn {
+  background-color: #ffffff;
+  color:#0B2641;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+}
+
+.custom-input-group .btn:hover {
+  background-color: #f0f0f0;
+  color: #002147;
 }
