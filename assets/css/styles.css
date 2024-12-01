@@ -253,21 +253,31 @@ p{
   justify-content: center;
   border-radius: 4px;
 }
+
 /* Partners Section */
-.partners-section{
-  background-color: #F0F4FA;
-}
-.partners-section img{
-  width: 100px;
-  height: 100px
+.partners-section .carousel-inner {
+  overflow: hidden;
+  position: relative;
 }
 
-.partners-section .partners-title{
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: #0B2641B2;
+.partners-section .carousel-inner .d-flex {
+  display: flex;
+  animation: scrollLeft linear infinite;
+  white-space: nowrap;
+}
+
+.partners-section .carousel-inner img {
+  flex: 0 0 auto;
+  margin: 0 10px;
+  width: 120px;
+}
+@keyframes scrollLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100%));
+  }
 }
 
 

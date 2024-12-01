@@ -69,6 +69,11 @@
 .mobile-app-section p{
   font-size: 14px;
 }
+
+footer .footer-btn{
+  width: 150px;
+  height: 50px;
+}
 }
 
 

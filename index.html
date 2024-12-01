@@ -15,13 +15,13 @@
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-4">
-    <div class="container d-flex">
+    <div class="container">
       <!-- Logo -->
       <a class="navbar-brand" href="#">
         <img src="logo-placeholder.png" alt="Vlascrow" width="30" />
       </a>
-  
-      <!-- Toggler Button (visible on screens 992px and below) -->
+
+      <!-- Toggler Button -->
       <button
         class="navbar-toggler d-lg-none"
         type="button"
@@ -34,7 +34,7 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-  
+
       <!-- Navbar Links and Buttons -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <!-- Centered Links -->
@@ -42,7 +42,7 @@
           <li class="nav-item">
             <a class="nav-link" href="#">About us</a>
           </li>
-  
+
           <!-- Dropdown for Resources -->
           <li class="nav-item dropdown">
             <a
@@ -61,12 +61,12 @@
               <li><a class="dropdown-item" href="#">Help Center</a></li>
             </ul>
           </li>
-  
+
           <li class="nav-item">
             <a class="nav-link" href="#">Pricing</a>
           </li>
         </ul>
-  
+
         <!-- Buttons on the Right -->
         <div class="d-flex justify-content-center buttons-container">
           <a href="#" class="btn btn-outline-primary me-2">Login</a>
@@ -75,6 +75,7 @@
       </div>
     </div>
   </nav>
+
   
   <!-- Hero Section -->
   <header class="hero-section bg-light py-5">
@@ -401,29 +402,24 @@
   <section class="partners-section">
     <div class="container text-center">
       <h4 class="fw-bold partners-title pt-2">OUR PARTNERS</h4>
-      <div id="partnersCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div id="partnersCarousel" class="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="d-flex justify-content-between">
-              <img src="assets/Images/logo1.png" alt="Partner 1">
-              <img src="assets/Images/logo 2.png" alt="Partner 2">
-              <img src="assets/Images/logo1.png" alt="Partner 3">
-              <img src="assets/Images/logo 2.png" alt="Partner 4">
-              <img src="assets/Images/logo1.png" alt="Partner 3">
-              <img src="assets/Images/logo 2.png" alt="Partner 4">
-              <img src="assets/Images/logo1.png" alt="Partner 3">
-            </div>
+          <div class="d-flex justify-content-between">
+            <img src="assets/Images/logo1.png" alt="Partner 1">
+            <img src="assets/Images/logo 2.png" alt="Partner 2">
+            <img src="assets/Images/logo1.png" alt="Partner 3">
+            <img src="assets/Images/logo 2.png" alt="Partner 4">
+            <img src="assets/Images/logo1.png" alt="Partner 1">
+            <img src="assets/Images/logo 2.png" alt="Partner 2">
+            <img src="assets/Images/logo1.png" alt="Partner 3">
+            <img src="assets/Images/logo 2.png" alt="Partner 4">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#partnersCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#partnersCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </button>
       </div>
     </div>
   </section>
+  
+  
 
   <section class="container my-5">
     <div class="mobile-app-section px-5 py-2">
@@ -547,6 +543,23 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   
   <script>
+
+const toggler = document.getElementById("navbar-toggler");
+    const navbarCollapse = document.getElementById("navbarNav");
+
+    toggler.addEventListener("click", () => {
+      if (toggler.classList.contains("collapsed")) {
+        toggler.innerHTML = '<i class="bi bi-x-lg"></i>';
+      } else {
+        toggler.innerHTML = '<span class="navbar-toggler-icon"></span>';
+      }
+    });
+
+    // Ensure icon reverts when navbar is hidden
+    navbarCollapse.addEventListener("hidden.bs.collapse", () => {
+      toggler.innerHTML = '<span class="navbar-toggler-icon"></span>';
+    });
+
     const collapseItems = document.querySelectorAll('.list-group-item');
     collapseItems.forEach(item => {
       item.addEventListener('click', function() {
@@ -562,6 +575,27 @@
         }
       });
     });
+  
+    // Partners Section Endless Slide
+  document.addEventListener("DOMContentLoaded", () => {
+  const carouselInner = document.querySelector('.carousel-inner .d-flex');
+  const logos = Array.from(carouselInner.children);
+  const logoWidth = 120;
+  const margin = 10;
+  const visibleArea = carouselInner.parentElement.offsetWidth;
+  const totalLogosNeeded = Math.ceil((visibleArea * 2) / (logoWidth + margin * 2));
+  const initialLogoCount = logos.length;
+
+  for (let i = 0; i < totalLogosNeeded - initialLogoCount; i++) {
+    carouselInner.appendChild(logos[i % initialLogoCount].cloneNode(true));
+  }
+  const totalContentWidth = carouselInner.scrollWidth;
+  const speed = 200;
+  const duration = totalContentWidth / speed;
+  carouselInner.style.animationDuration = `${duration}s`;
+});
+
+
   </script>
 
 </body>
