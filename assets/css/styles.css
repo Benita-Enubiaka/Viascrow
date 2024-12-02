@@ -29,6 +29,11 @@ p{
   border-color: #137EE8;
 }
 
+.navbar-toggler{
+  border: none;
+  outline: none;
+}
+
 .navbar .get-started {
   background-color: #137EE8;
   color: #ffffff;
