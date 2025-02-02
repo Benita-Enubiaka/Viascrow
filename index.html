@@ -91,24 +91,9 @@
         </p>
         <a href="#" class="btn btn-primary mt-3">Join as a seller</a>
       </div>
-      <div class="hero-illustration mt-5 mt-lg-0 position-relative">
-        <div class="diagram rounded shadow-sm p-4">
-          <div class="step mb-3 d-flex align-items-center">
-            <div class="icon bg-primary text-white">👤</div>
-            <p class="ms-3 mb-0">Create an escrow account</p>
-          </div>
-          <div class="step mb-3 bg-warning text-dark p-3 rounded">
-            <p class="mb-0">Set payment terms</p>
-          </div>
-          <div class="step mb-3 d-flex align-items-center">
-            <div class="icon bg-primary text-white">📦</div>
-            <p class="ms-3 mb-0">Seller sends goods to buyer</p>
-          </div>
-          <div class="step d-flex align-items-center">
-            <div class="icon bg-primary text-white">✔️</div>
-            <p class="ms-3 mb-0">Buyer confirms receipt</p>
-          </div>
-        </div>
+      <div class="text-center mt-4 mt-lg-0">
+        <img src="./assets/Images/placeholder.jpg" alt="infographic" class="img-fluid" style="max-width: 100%; height: auto;">
+    </div>
       </div>
     </div>
   </header>
@@ -302,44 +287,45 @@
       <div class="col-lg-6 order-2 order-lg-1 mt-2">
         <h3 class="fw-bold">Flexible payment methods for you and your vendors</h3>
         <p>Visacrow makes it easy for your business to pay bills by whatever method you choose. Vendors, contractors, and suppliers can accept payment without creating an account.</p>
+        
         <ul class="list-group list-group-flush" id="payment-list">
-          <li class="list-group-item" data-toggle="collapse" data-target="#item-1">
-            <span class="list-item-number">01.</span> Sell your products
-          </li>
-          <!-- Set Step 1 to be open by default -->
-          <div id="item-1" class="collapse show">
-            <p class="subtext px-4">Easily list and sell your products with a payment method that fits your business model, enabling a seamless experience for your customers.</p>
-          </div>
+            <li class="list-group-item" data-bs-toggle="collapse" data-bs-target="#item-1">
+                <span class="list-item-number">01.</span> Sell your products
+            </li>
+            <div id="item-1" class="collapse show">
+                <p class="subtext px-4">Easily list and sell your products with a payment method that fits your business model, enabling a seamless experience for your customers.</p>
+            </div>
     
-          <li class="list-group-item" data-toggle="collapse" data-target="#item-2">
-            <span class="list-item-number">02.</span> Pay utility bills
-          </li>
-          <div id="item-2" class="collapse">
-            <p class="subtext px-4">Quickly and securely settle your utility bills using our platform, ensuring uninterrupted services for your operations.</p>
-          </div>
+            <li class="list-group-item" data-bs-toggle="collapse" data-bs-target="#item-2">
+                <span class="list-item-number">02.</span> Pay utility bills
+            </li>
+            <div id="item-2" class="collapse">
+                <p class="subtext px-4">Quickly and securely settle your utility bills using our platform, ensuring uninterrupted services for your operations.</p>
+            </div>
     
-          <li class="list-group-item" data-toggle="collapse" data-target="#item-3">
-            <span class="list-item-number">03.</span> Expand your customer base
-          </li>
-          <div id="item-3" class="collapse">
-            <p class="subtext px-4">Reach new markets and attract more customers by offering versatile payment options that cater to a diverse audience.</p>
-          </div>
+            <li class="list-group-item" data-bs-toggle="collapse" data-bs-target="#item-3">
+                <span class="list-item-number">03.</span> Expand your customer base
+            </li>
+            <div id="item-3" class="collapse">
+                <p class="subtext px-4">Reach new markets and attract more customers by offering versatile payment options that cater to a diverse audience.</p>
+            </div>
     
-          <li class="list-group-item" data-toggle="collapse" data-target="#item-4">
-            <span class="list-item-number">04.</span> Automate your payment flow
-          </li>
-          <div id="item-4" class="collapse">
-            <p class="subtext px-4">Streamline your payment processes with automation, saving time and reducing the risk of errors in transactions.</p>
-          </div>
+            <li class="list-group-item" data-bs-toggle="collapse" data-bs-target="#item-4">
+                <span class="list-item-number">04.</span> Automate your payment flow
+            </li>
+            <div id="item-4" class="collapse">
+                <p class="subtext px-4">Streamline your payment processes with automation, saving time and reducing the risk of errors in transactions.</p>
+            </div>
     
-          <li class="list-group-item" data-toggle="collapse" data-target="#item-5">
-            <span class="list-item-number">05.</span> Protect against fraud
-          </li>
-          <div id="item-5" class="collapse">
-            <p class="subtext px-4">Ensure the safety of your transactions with robust fraud protection measures designed to safeguard your business and customers.</p>
-          </div>
+            <li class="list-group-item" data-bs-toggle="collapse" data-bs-target="#item-5">
+                <span class="list-item-number">05.</span> Protect against fraud
+            </li>
+            <div id="item-5" class="collapse">
+                <p class="subtext px-4">Ensure the safety of your transactions with robust fraud protection measures designed to safeguard your business and customers.</p>
+            </div>
         </ul>
-      </div>
+    </div>
+    
       <!-- Right Image -->
       <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0 text-center">
         <img src="https://via.placeholder.com/600x600" class="img-fluid rounded shadow mx-auto d-block" alt="Payment Image">
@@ -540,6 +526,21 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   
   <script>
+
+    //Flexible payment method (List Items Collapse)
+    document.addEventListener("DOMContentLoaded", function () {
+          const items = document.querySelectorAll(".list-group-item");
+          
+          items.forEach(item => {
+              item.addEventListener("click", function () {
+                  document.querySelectorAll(".collapse.show").forEach(openItem => {
+                      if (openItem.id !== this.dataset.bsTarget.substring(1)) {
+                          new bootstrap.Collapse(openItem, { toggle: true });
+                      }
+                  });
+              });
+          });
+      });
   
   // Partners Section Endless Slide
   document.addEventListener("DOMContentLoaded", () => {
